@@ -1,5 +1,5 @@
 {
-  "name": "webpack-5-react",
+  "name": "webpack-react-config",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -43,11 +43,11 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hastle/webpack-5-react.git"
+    "url": "git+https://github.com/Hastle/webpack-react-config.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/Hastle/webpack-5-react/issues"
+    "url": "https://github.com/Hastle/webpack-react-config/issues"
   },
-  "homepage": "https://github.com/Hastle/webpack-5-react#readme"
+  "homepage": "https://github.com/Hastle/webpack-react-config#readme"
 }
