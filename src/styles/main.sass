@@ -1,7 +1,43 @@
+@import "mixins"
 body
-	background-color: #222
+	margin: 0
+	background-color: $white
+	color: $black
+	+regular
+.App, #root
+	min-height: 100vh
 	display: flex
-	justify-content: center
-	align-items: center
-	height: 100vh
-	color: pink
+	flex-direction: column
+a
+	color: $black
+	cursor: pointer
+	text-decoration: none
+	outline-style: none
+a:hover
+	text-decoration: none
+	outline-style: none
+a:focus
+	text-decoration: none
+	outline-style: none
+a:visited
+	text-decoration: none
+	outline-style: none
+img
+	display: inline-block
+	max-width: 100%
+	height: auto
+input, textarea
+	text-decoration: none
+	outline-style: none
+	font-size: 16px
+button
+	cursor: pointer
+	background-color: transparent
+	outline-style: none
+	border: none
+button:hover
+	background-color: transparent
+	outline-style: none
+button:focus
+	background-color: transparent
+	outline-style: none
