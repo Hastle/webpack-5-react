@@ -1,26 +1,30 @@
 import React from "react";
-import "../styles/grid.sass";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Layout/Layout";
+import MainPage from "../pages/MainPage";
+import Apartments from "../pages/Apartments";
+import About from "../pages/About";
+import Contacts from "../pages/Contacts";
+import Login from "../pages/Login";
+import Profile from "../pages/Profile";
+
+import ScrollToTop from "../utils/ScrollToTop";
 
 function App() {
 	return (
-		<>
-			<div className="container">
-				<div className="row g-3">
-					<div className="col-md-4">
-						<div id="card">Test 0</div>
-					</div>
-					<div className="col-md-4">
-						<div id="card">Text 1 $$</div>
-					</div>
-					<div className="col-md-4">
-						<div id="card">Test</div>
-					</div>
-					<div className="col-md-12">
-						<div id="card">Text #3</div>
-					</div>
-				</div>
-			</div>
-		</>
+		<BrowserRouter>
+			<ScrollToTop />
+			<Routes>
+				<Route element={<Layout />}>
+					<Route path="/" element={<MainPage />} />
+					<Route path="/apartments" element={<Apartments />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/contacts" element={<Contacts />} />
+					<Route path="/login" element={<Login />} />
+					<Route path="/profile" element={<Profile />} />
+				</Route>
+			</Routes>
+		</BrowserRouter>
 	);
 }
 
