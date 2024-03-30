@@ -1,6 +1,7 @@
 {
-  "name": "webpack-react-config",
-  "version": "1.0.0",
+  "name": "react-yarapartments",
+  "version": "2.0.0",
+  "proxy": "http://localhost:8080",
   "main": "index.js",
   "scripts": {
     "start": "cross-env SERVE=true webpack serve",
@@ -40,17 +41,19 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.9.0"
   },
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hastle/webpack-react-config.git"
+    "url": "git+https://github.com/Hastle/YarApartments.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/Hastle/webpack-react-config/issues"
+    "url": "https://github.com/Hastle/YarApartments/issues"
   },
-  "homepage": "https://github.com/Hastle/webpack-react-config#readme"
+  "homepage": "https://github.com/Hastle/YarApartments#readme"
 }
